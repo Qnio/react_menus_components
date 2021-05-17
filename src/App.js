@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+//CORE COMPONENTS
+import React from 'react';
+
+//CREATED COMPONENTS FOR THIS PROJECT
+import NavigationMenuOne from './components/navigation-menus/nav-menu-one/nav-menu-one.component';
+import NavigationMenuTwo from './components/navigation-menus/nav-menu-two/nav-menu-two.component';
+import HomePage from './components/home-page/home-page.component';
+//STYLED COMPONENTS IMPORT
+import { GlobalStyle } from './global.styles.jsx';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <GlobalStyle />
+      <NavigationMenuTwo />
+      <HomePage />
     </div>
   );
 }
